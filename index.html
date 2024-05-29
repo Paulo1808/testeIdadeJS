@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TratandoDados</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="corpo">
+    <header id="titulo">
+        <h1>Teste de Idade</h1>
+    </header>
+
+        <div id="prin">
+            <div class="idade">
+                <label for="infIdade"> Ano que você nasceu:</label>
+                <input type="number" name="idade" id="infIdade">
+            </div>
+            <div class="sexo">
+            <p> Qual seu sexo:
+                <input type="radio" name="sex" id="Fem" checked>
+                <label for="Fem">Feminino</label>
+                <input type="radio" name="sex" id="Mas">
+                <label for="Mas">Masculino</label>
+            </p>
+            </div>
+
+            <input type="button" value="Verificar" onclick="verificar()">
+
+            <div id="res">
+                Mensagem do script
+                <img id="foto" src="" alt="">
+            </div>
+            
+        </div>
+
+    <footer id="rodape">
+        <h6>&copy; Paulo Vinícius</h6>
+    </footer>
+    <script src="index.js"></script>
+
+    <div vw class="enabled">
+        <div vw-access-button class="active"></div>
+        <div vw-plugin-wrapper>
+          <div class="vw-plugin-top-wrapper"></div>
+        </div>
+    </div>
+      <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+      <script>
+        new window.VLibras.Widget('https://vlibras.gov.br/app');
+      </script>
+</body>
+</html>
